@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faUserSecret)
 library.add(faCaretDown)
-Vue.component('fawicon', FontAwesomeIcon)
+Vue.component('fas', FontAwesomeIcon)
 
 Vue.config.productionTip = false
 

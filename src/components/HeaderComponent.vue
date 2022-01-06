@@ -1,24 +1,24 @@
 <template>
     <div class="navbar">
         <div class="logo">
-            Learn English With Us
+            <router-link to="/">Learn English With Us</router-link>
         </div>
         <div class="nav-right">
             <div class="nav-element subnav-p">
                 Родителям
-                <fawicon icon="caret-down"/>
+                <fas icon="caret-down"/>
                 <div class="subnav-content">
                     <div class="nav-element subnav-c">
-                        Содержание курса
+                        <router-link to="/plan">Содержание курса</router-link>
                     </div>
                 </div>
             </div>
             <div class="nav-element subnav-p">
                 Ученикам
-                <fawicon icon="caret-down"/>
+                <fas icon="caret-down"/>
                 <div class="subnav-content">
                     <div class="nav-element subnav-c">
-                        Словарь
+                        <router-link to="/dictionary">Словарь</router-link>                        
                     </div>
                     <div class="nav-element subnav-c">
                         Рекомендации
@@ -30,10 +30,10 @@
             </div>
             <div class="nav-element subnav-p">
                 Галлерея
-                <fawicon icon="caret-down"/>
+                <fas icon="caret-down"/>
                 <div class="subnav-content">
                     <div class="nav-element subnav-c">
-                        Фото
+                        <router-link to="/gallery">Фото</router-link>
                     </div>
                     <div class="nav-element subnav-c">
                         Видео
@@ -102,5 +102,12 @@ export default ({
     .navbar .nav-element.nav-element.subnav-p:hover .subnav-content {        
         display: block;
         margin: 7px 0px;
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    a:visited {
+        color: inherit;
     }
 </style>
